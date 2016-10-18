@@ -16,48 +16,44 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silly Song" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMZ-AV-wMe">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="111" id="Mzm-hL-82I"/>
-                                    <constraint firstAttribute="width" constant="265" id="vCj-r2-aGn"/>
+                                    <constraint firstAttribute="height" constant="75" id="MBJ-ee-C7x"/>
+                                    <constraint firstAttribute="width" constant="241" id="vcC-to-9kw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UKB-rd-ioe">
-                                <frame key="frameInset" minX="67" minY="289" width="240" height="128"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rnp-Wk-i5T">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UKB-rd-ioe">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="0PM-MW-muv"/>
-                                    <constraint firstAttribute="width" constant="240" id="e1j-Up-tGA"/>
+                                    <constraint firstAttribute="width" constant="240" id="4XE-FE-cmT"/>
+                                    <constraint firstAttribute="height" constant="128" id="76V-X6-KB3"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rnp-Wk-i5T">
-                                <frame key="frameInset" minX="64" minY="212" width="247" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="UKB-rd-ioe" firstAttribute="top" secondItem="rnp-Wk-i5T" secondAttribute="bottom" constant="47" id="3Cj-0E-nzP"/>
-                            <constraint firstItem="rMZ-AV-wMe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BBb-PI-WbA"/>
-                            <constraint firstItem="rnp-Wk-i5T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="48" id="DAw-ne-pp0"/>
-                            <constraint firstItem="rMZ-AV-wMe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Ep5-Zo-gSw"/>
-                            <constraint firstItem="rMZ-AV-wMe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HS8-Tb-tNu"/>
-                            <constraint firstItem="rMZ-AV-wMe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ndd-fz-naj"/>
-                            <constraint firstItem="rMZ-AV-wMe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Tic-B9-Dv9"/>
-                            <constraint firstItem="rnp-Wk-i5T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZIQ-Lc-D6n"/>
-                            <constraint firstItem="UKB-rd-ioe" firstAttribute="centerX" secondItem="rnp-Wk-i5T" secondAttribute="centerX" id="rYR-Pb-fqr"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="rnp-Wk-i5T" secondAttribute="trailing" constant="48" id="xhh-h0-pja"/>
+                            <constraint firstItem="rMZ-AV-wMe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="FQH-xK-YWZ"/>
+                            <constraint firstItem="rnp-Wk-i5T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QmE-6Y-nhr"/>
+                            <constraint firstItem="UKB-rd-ioe" firstAttribute="top" secondItem="rnp-Wk-i5T" secondAttribute="bottom" constant="49" id="Ryt-NM-aPO"/>
+                            <constraint firstItem="rMZ-AV-wMe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YaL-kE-9Ts"/>
+                            <constraint firstItem="UKB-rd-ioe" firstAttribute="centerX" secondItem="rnp-Wk-i5T" secondAttribute="centerX" id="dZL-rg-xkD"/>
+                            <constraint firstItem="rnp-Wk-i5T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64" id="dlq-7k-aeZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rnp-Wk-i5T" secondAttribute="trailing" constant="63" id="wiq-ah-alV"/>
+                            <constraint firstItem="rnp-Wk-i5T" firstAttribute="top" secondItem="rMZ-AV-wMe" secondAttribute="bottom" constant="114" id="yUQ-sh-UWP"/>
                         </constraints>
                     </view>
                 </viewController>
