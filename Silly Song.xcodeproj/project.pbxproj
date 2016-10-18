@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					3718EFA91DB6B1830075B51C = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = S4LX2Q2Q9V;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -260,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S4LX2Q2Q9V;
 				INFOPLIST_FILE = "Silly Song/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nickfohs.Silly-Song";
@@ -272,6 +274,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S4LX2Q2Q9V;
 				INFOPLIST_FILE = "Silly Song/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nickfohs.Silly-Song";
