@@ -31,35 +31,42 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rnp-Wk-i5T">
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="displayLyrics:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="uKG-To-h5i"/>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="ZmZ-K5-mxl"/>
+                                </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UKB-rd-ioe">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="4XE-FE-cmT"/>
-                                    <constraint firstAttribute="height" constant="128" id="76V-X6-KB3"/>
+                                    <constraint firstAttribute="height" constant="197" id="7Ns-br-Qqg"/>
+                                    <constraint firstAttribute="width" constant="240" id="7lF-Ln-i0M"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="UKB-rd-ioe" firstAttribute="top" secondItem="rnp-Wk-i5T" secondAttribute="bottom" constant="55" id="8cn-Zz-Iqm"/>
+                            <constraint firstItem="UKB-rd-ioe" firstAttribute="centerX" secondItem="rnp-Wk-i5T" secondAttribute="centerX" id="92F-gS-DfC"/>
                             <constraint firstItem="rMZ-AV-wMe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="FQH-xK-YWZ"/>
-                            <constraint firstItem="rnp-Wk-i5T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QmE-6Y-nhr"/>
-                            <constraint firstItem="UKB-rd-ioe" firstAttribute="top" secondItem="rnp-Wk-i5T" secondAttribute="bottom" constant="49" id="Ryt-NM-aPO"/>
                             <constraint firstItem="rMZ-AV-wMe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YaL-kE-9Ts"/>
-                            <constraint firstItem="UKB-rd-ioe" firstAttribute="centerX" secondItem="rnp-Wk-i5T" secondAttribute="centerX" id="dZL-rg-xkD"/>
                             <constraint firstItem="rnp-Wk-i5T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64" id="dlq-7k-aeZ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="rnp-Wk-i5T" secondAttribute="trailing" constant="63" id="wiq-ah-alV"/>
+                            <constraint firstItem="rnp-Wk-i5T" firstAttribute="centerX" secondItem="rMZ-AV-wMe" secondAttribute="centerX" id="kIf-q9-zeZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rnp-Wk-i5T" secondAttribute="trailing" constant="63" id="paP-Ng-Dfp"/>
                             <constraint firstItem="rnp-Wk-i5T" firstAttribute="top" secondItem="rMZ-AV-wMe" secondAttribute="bottom" constant="114" id="yUQ-sh-UWP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lyricsView" destination="UKB-rd-ioe" id="FIF-he-Ss2"/>
+                        <outlet property="nameField" destination="rnp-Wk-i5T" id="jED-PJ-qrd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="136.23188405797103" y="138.58695652173915"/>
         </scene>
     </scenes>
 </document>
