@@ -37,7 +37,13 @@ class ViewController: UIViewController {
 }
 
 func shortNamefromName(name: String) -> String {
-    return name.substring(from: name.index(after: name.startIndex))
+    let lowercaseName = name.lowercased()
+    let vowelSet = CharacterSet(charactersIn: "aeiou")
+    if let firstVowelRange = lowercaseName.rangeOfCharacter(from: vowelSet, options: .caseInsensitive) {
+        return lowercaseName.substring(from: firstVowelRange.lowerBound)
+    } else {
+        return lowercaseName
+    }
 }
 
 let bananaFanaTemplate = [
